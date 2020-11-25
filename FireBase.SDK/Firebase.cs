@@ -4,11 +4,11 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using FireBase.SDK.Models;
+using Firebase.SDK.Models;
 using Microsoft.Extensions.Options;
 using Slack.SDK;
 
-namespace FireBase.SDK
+namespace Firebase.SDK
 {
     public class Firebase : IFirebase
     {
@@ -29,8 +29,8 @@ namespace FireBase.SDK
         /// <returns></returns>
         public async Task<FirebaseResource> GetFirebase(string token, string code)
         {
-            FirebaseResource _firebase = await GetVerifyPhoneNumber(token, code);
-            if (_firebase != null && _firebase.Error != null && _firebase.PhoneNumber < 10000)
+            FirebaseResource _Firebase = await GetVerifyPhoneNumber(token, code);
+            if (_Firebase != null && _Firebase.Error != null && _Firebase.PhoneNumber < 10000)
             {
                 //Neu gap loi kiem tra token đã được verify ở client chưa
                 JwtSecurityToken jwt = await GetJwtSecurityToken(token);
@@ -40,13 +40,13 @@ namespace FireBase.SDK
                     if (jwt.ValidFrom < timeNow && timeNow < jwt.ValidTo && jwt.Audiences.Contains(_settings.ProjectId))
                     {
                         //token ok
-                        //goi hàm lấy thông tin từ api firebase và mapping thành Firebase Resource
-                        FirebaseResource _firebaseToken = await GetUserInfo(token);
-                        if (_firebaseToken != null) return _firebaseToken;
+                        //goi hàm lấy thông tin từ api Firebase và mapping thành Firebase Resource
+                        FirebaseResource _FirebaseToken = await GetUserInfo(token);
+                        if (_FirebaseToken != null) return _FirebaseToken;
                     }
                 }
             }
-            return _firebase;
+            return _Firebase;
         }
 
         /// <summary>
@@ -140,7 +140,7 @@ namespace FireBase.SDK
         }
 
         /// <summary>
-        /// API: https://firebase.google.com/docs/reference/rest/auth#section-get-account-info
+        /// API: https://Firebase.google.com/docs/reference/rest/auth#section-get-account-info
         /// </summary>
         /// <param name="tokenFirebase"></param>
         /// <returns></returns>
@@ -161,13 +161,13 @@ namespace FireBase.SDK
                 UserFirebase user = resource.Users.FirstOrDefault();
                 if (user != null)
                 {
-                    FirebaseResource firebaseResource = new FirebaseResource
+                    FirebaseResource FirebaseResource = new FirebaseResource
                     {
                         IdToken = tokenFirebase,
                         LocalId = user.LocalId,
                         PhoneNumber = user.PhoneNumber,
                     };
-                    return firebaseResource;
+                    return FirebaseResource;
                 }
             }
             return null;

@@ -1,11 +1,11 @@
 ﻿using Newtonsoft.Json;
 
-namespace FireBase.SDK.Models
+namespace Firebase.SDK.Models
 {
     /// <summary>
     ///
     /// </summary>
-    public class Provideruserinfo
+    public class ProviderUserInfo
     {
         /// <summary>
         ///

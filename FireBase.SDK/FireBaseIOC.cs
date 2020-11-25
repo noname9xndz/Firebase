@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using FireBase.SDK.Models;
+using Firebase.SDK.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Slack.SDK;
 using Slack.SDK.Models;
 using Slack.Webhooks;
 
-namespace FireBase.SDK
+namespace Firebase.SDK
 {
-    public static class FireBaseIoc
+    public static class FirebaseIoc
     {
         public static void Register(IServiceCollection services, IConfiguration configuration)
         {

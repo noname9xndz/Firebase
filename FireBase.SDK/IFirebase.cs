@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using FireBase.SDK.Models;
+using Firebase.SDK.Models;
 
-namespace FireBase.SDK
+namespace Firebase.SDK
 {
    public interface IFirebase
    {

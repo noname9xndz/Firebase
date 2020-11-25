@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace FireBase.SDK.Models
+namespace Firebase.SDK.Models
 {
     /// <summary>
     /// lỗi khi xác nhận otp
     /// </summary>
-    public class FireBaseOtpError
+    public class FirebaseOtpError
     {
         /// <summary>
         /// 400 - message SESSION_EXPIRED, INVALID_CODE
@@ -18,7 +18,7 @@ namespace FireBase.SDK.Models
         /// danh sách lỗi
         /// </summary>
         [JsonProperty("errors")]
-        public List<FireBaseOtpErrorItem> Errors { get; set; }
+        public List<FirebaseOtpErrorItem> Errors { get; set; }
 
         /// <summary>
         ///

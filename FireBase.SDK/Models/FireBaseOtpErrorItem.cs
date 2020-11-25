@@ -1,11 +1,11 @@
 ﻿using Newtonsoft.Json;
 
-namespace FireBase.SDK.Models
+namespace Firebase.SDK.Models
 {
     /// <summary>
     /// item lỗi
     /// </summary>
-    public class FireBaseOtpErrorItem
+    public class FirebaseOtpErrorItem
     {
         /// <summary>
         ///

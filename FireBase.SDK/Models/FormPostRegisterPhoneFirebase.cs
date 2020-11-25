@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace FireBase.SDK.Models
+namespace Firebase.SDK.Models
 {
     /// <summary>
     /// Form đăng ký tài khoản

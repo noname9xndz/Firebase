@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace FireBase.SDK.Models
+namespace Firebase.SDK.Models
 {
     public class UserDataFirebase
     {

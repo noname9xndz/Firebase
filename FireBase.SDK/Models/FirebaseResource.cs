@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace FireBase.SDK.Models
+namespace Firebase.SDK.Models
 {
     public class FirebaseResource
     {
@@ -8,7 +8,7 @@ namespace FireBase.SDK.Models
         ///
         /// </summary>
         [JsonProperty("error")]
-        public FireBaseOtpError Error { get; set; }
+        public FirebaseOtpError Error { get; set; }
 
         /// <summary>
         ///

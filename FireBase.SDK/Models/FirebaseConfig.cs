@@ -1,4 +1,4 @@
-﻿namespace FireBase.SDK.Models
+﻿namespace Firebase.SDK.Models
 {
     public class FirebaseConfig
     {
