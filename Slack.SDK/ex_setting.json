@@ -1,0 +1,8 @@
+{
+  "SlackConfig": {
+    "UrlChannelSentry": "",
+    "UrlChannelUserReg": "",
+    "UrlChannelEditor": "",
+    "UrlChannelUserPayment": ""
+  } 
+}

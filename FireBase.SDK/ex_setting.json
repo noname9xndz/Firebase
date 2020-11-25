@@ -1,0 +1,21 @@
+{
+  "FirebaseConfig": {
+    "AppId": "",
+    "ApiKey": "",
+    "Server_Key": "",
+    "ProjectId": "",
+    "UseLamdbaFunction": false,
+    "UrlVerifyPhoneNumberLambda": "",
+    "UseSlackNotify": false,
+    "PushNotificationUrl": "https://fcm.googleapis.com/fcm/send",
+    "GetAccountInfoUrl": "https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=",
+    "VerifyPhoneNumberUrl": "https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=",
+    "SessionInfoUrl": "https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPhoneNumber?key="
+  },
+  "SlackConfig": {
+    "ChannelSentryUrl": "",
+    "ChannelUserRegUrl": "",
+    "ChannelEditorUrl": "",
+    "ChannelUserPaymentUrl": ""
+  }
+}
