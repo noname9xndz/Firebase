@@ -32,7 +32,7 @@ If you use Slack Noify Add
 If you use lamdba function , you need add UrlVerifyPhoneNumberLambda and active UseLamdbaFunction 
 and deploy function Firebase.AWS.Verify to AWS Lamdba Function
 
-Step2: register
+Step 2 : register
 
 public void ConfigureServices(IServiceCollection services)
 {
@@ -45,7 +45,7 @@ public void ConfigureServices(IServiceCollection services)
        services.AddScoped<IFirebase, Firebase>();
 }
 
-Or 
++ Or 
 
 public void ConfigureServices(IServiceCollection services)
 {
