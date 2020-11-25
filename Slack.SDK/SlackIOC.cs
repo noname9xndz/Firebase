@@ -5,7 +5,7 @@ using Slack.Webhooks;
 
 namespace Slack.SDK
 {
-    public static class SlackIOC
+    public static class SlackIoc
     {
         public static void Register(IServiceCollection services, IConfiguration configuration)
         {

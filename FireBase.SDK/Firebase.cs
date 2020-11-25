@@ -91,6 +91,12 @@ namespace Firebase.SDK
             return resource;
         }
 
+        /// <summary>
+        /// You can deploy function to aws lamdba
+        /// </summary>
+        /// <param name="sessionInfo"></param>
+        /// <param name="otp"></param>
+        /// <returns></returns>
         private async Task<FirebaseResource> VerifyPhoneNumber(string sessionInfo, string otp)
         {
             try
