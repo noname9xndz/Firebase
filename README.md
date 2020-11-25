@@ -2,6 +2,7 @@
 
 Step 1 : Add Setting file for Firebase
 
+```
 {
   "FirebaseConfig": {
     "AppId": "",
@@ -19,7 +20,11 @@ Step 1 : Add Setting file for Firebase
  
 }
 
+```
 If you use Slack Noify Add
+
+
+```
 {
   "SlackConfig": {
     "ChannelSentryUrl": "",
@@ -29,11 +34,13 @@ If you use Slack Noify Add
   }
 }
 
+```
 If you use lamdba function , you need add UrlVerifyPhoneNumberLambda and active UseLamdbaFunction 
 and deploy function Firebase.AWS.Verify to AWS Lamdba Function
 
 Step 2 : register
 
+```
 public void ConfigureServices(IServiceCollection services)
 {
        
@@ -45,16 +52,21 @@ public void ConfigureServices(IServiceCollection services)
        services.AddScoped<IFirebase, Firebase>();
 }
 
+```
 + Or 
 
+
+```
 public void ConfigureServices(IServiceCollection services)
 {
        
        FirebaseIoc.Register(services,Configuration)
 }
 
+```
 + Use :
 
+```
 public class TestController : Controller
 {
      private readonly IFirebase _firebase;
@@ -63,6 +75,7 @@ public class TestController : Controller
          _firebase = firebase
      }
 }
+```
 
 
 
