@@ -34,7 +34,7 @@ namespace Firebase.SDK.Models
         ///
         /// </summary>
         [JsonProperty("providerUserInfo")]
-        public Provideruserinfo[] ProviderUserInfo { get; set; }
+        public ProviderUserInfo[] ProviderUserInfo { get; set; }
 
         /// <summary>
         ///
